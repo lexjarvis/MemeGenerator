@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Meme Generator</h1>
+    <form>
+        <div class="meme-input-section">
+        <input type="file" id="file_upload" onchange="update_image()">
+        <input type ="text" id="top_meme_text" placeholder="Top Text" oninput="update_top_text()" maxlength="70">
+        <input type ="text" id="bottom_meme_text" placeholder="Bottom Text" oninput="update_bottom_text()" maxlength="70">
+        </div>
+        <div class="container">
+        <div id="top_message"></div>
+        <div id="bottom_message"></div>
+        <div id="img">
+            <img src height="500" width="600"> 
+        </div>
+        <button onclick="document.getElementById('myInput').value = ''">Remove</button>
+    </form>
+    <script src="app.js">
+    </script>
+</body>
+</html>
